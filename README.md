@@ -48,5 +48,5 @@ Special thanks to OpenAI for providing the ChatGPT model that helped in the deve
 
 ## Contact
 
-For any questions or inquiries, please contact [Your Name] at [your@email.com].
+For any questions or inquiries, please contact Ian Bravyn at ianbravynsa@gmail.com
 
