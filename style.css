@@ -20,6 +20,19 @@ body {
   border: 1px solid #dddddd;
   padding: 10px;
   margin-bottom: 10px;
+  white-space: pre-wrap; /* Added style for text wrapping */
+  scrollbar-width: thin;
+  scrollbar-color: #999999 #dddddd;
+}
+#output-area::-webkit-scrollbar {
+  width: 6.3px;
+}
+#output-area::-webkit-scrollbar-track{
+  background-color: #dddddd;  
+}
+#output-area::-webkit-scrollbar-thumb{
+  background-color: #525151;
+  border-radius: 5px;
 }
 
 #input-area {
