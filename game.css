@@ -1,0 +1,117 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  perspective: 1000px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 64px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+.game-container {
+  width: 800px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Additional styles for an immersive experience */
+
+body {
+  background-color: #000;
+}
+
+#content {
+  perspective: 1000px;
+}
+
+.game-container {
+  transform-style: preserve-3d;
+  animation: rotateAnimation 60s linear infinite;
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(3deg) rotateY(-10deg) rotateZ(0deg);
+
+}
+}
+
+.puzzle-card {
+  width: 400px;
+  height: 250px;
+  background-color: #222;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+}
+
+.puzzle-card-content {
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.puzzle-card:hover .puzzle-card-content {
+  transform: rotateX(5deg) rotateY(5deg);
+}
+
+.puzzle-card-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.puzzle-card-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.puzzle-card-button {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: #ff5252;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.puzzle-card-button:hover {
+  background-color: #ff3d3d;
+}
