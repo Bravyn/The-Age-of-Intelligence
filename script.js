@@ -20,6 +20,10 @@ function processInput(){
   const input = inputField.value.trim().toLowerCase();//remove whitespace
   inputField.value = '';//reset input text field
   //handle user input based on current location
+  if (input === 'start quest') {
+      startQuest('quest1');
+  }
+  
   switch(currentLocation){
     case 'home':
       handleHomeLocation(input);
@@ -30,6 +34,7 @@ function processInput(){
     //todo: add more locations
     default:
       appendToOutput("Oops, you can't do anything here, try another location")
+    
   }
 }
 
@@ -40,6 +45,7 @@ function handleHomeLocation(input){
       currentLocation = 'forest';
       appendToOutput("You venture into the forest");
       break;
+   
       //todo:add more commands specific to when the player is at home
     default:
       appendToOutput("I am sorry, I don't understand that command");
